@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo-header {
+    display: inline;
+  }
+  
+  .text-theme {
+    color: greenyellow;
+  }
+  
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure header is above other content */
+  }
+.logo-header>a {
+  text-decoration: none !important;
+}
+  .logo-header>a:hover {
+    text-decoration: none !important;
+  }
+
+
+  
+  #user-section {
+    text-align: right;
+  }
+  
+  #sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #272727;
+    left: 0;
+    top: 53px; /* Adjusted to accommodate the header */
+    overflow-x: hidden;
+    padding-top: 10px;
+    z-index: 900; /* Ensure sidebar is above main content */
+  }
+  
+  .user-infor {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .user-infor img { /* Adjust the max-width as needed */
+    margin-right: 15px; /* Add some margin between the image and the text */
+  }
+  
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #sidebar a{
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  #sidebar a:hover {
+    background-color: #404040;
+  }
+  
+  .menu > .submenu {
+    display: none;
+  }
+  
+  .submenu a {
+    font-size: 15px !important;
+    padding-left: 45px !important;
+  }
+  
+  #content {
+    margin-left: 250px;
+    margin-top: 10px; /* Adjusted to accommodate the header and prevent overlap */
+    padding: 20px;
+  }
+
